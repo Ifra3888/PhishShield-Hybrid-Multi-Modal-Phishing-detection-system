@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Email Phishing Detector</title>
+
+    <link rel="stylesheet"
+          href="/static/style.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <header>
+
+            <div class="logo">
+                🛡️
+            </div>
+
+            <div>
+
+                <h1>
+                    Email Phishing Detector
+                </h1>
+
+                <p>
+                    AI-powered email security analysis
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- INPUT SECTION -->
+
+        <section class="card">
+
+            <h2>
+                Analyze an Email
+            </h2>
+
+
+            <!-- SUBJECT -->
+
+            <label for="subject">
+                Email Subject
+            </label>
+
+            <input
+                type="text"
+                id="subject"
+                placeholder="Enter email subject..."
+            >
+
+
+            <!-- BODY -->
+
+            <label for="body">
+                Email Body
+            </label>
+
+            <textarea
+                id="body"
+                rows="10"
+                placeholder="Paste the email content here..."
+            ></textarea>
+
+
+            <!-- BUTTON -->
+
+            <button
+                onclick="analyzeEmail()"
+                id="analyzeButton"
+            >
+
+                🔍 Analyze Email
+
+            </button>
+
+        </section>
+
+
+        <!-- LOADING -->
+
+        <div
+            id="loading"
+            class="loading hidden"
+        >
+
+            Analyzing email...
+
+        </div>
+
+
+        <!-- RESULT -->
+
+        <section
+            id="result"
+            class="card hidden"
+        >
+
+            <h2>
+                Analysis Result
+            </h2>
+
+
+            <!-- VERDICT -->
+
+            <div
+                id="verdict"
+                class="verdict"
+            >
+
+            </div>
+
+
+            <!-- INFORMATION -->
+
+            <div class="result-grid">
+
+                <div class="result-box">
+
+                    <span>
+                        ML Confidence
+                    </span>
+
+                    <strong id="confidence">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="result-box">
+
+                    <span>
+                        Risk Level
+                    </span>
+
+                    <strong id="risk">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="result-box">
+
+                    <span>
+                        Rule Score
+                    </span>
+
+                    <strong id="ruleScore">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- KEYWORDS -->
+
+            <div class="details">
+
+                <h3>
+                    🚨 Detected Keywords
+                </h3>
+
+                <div id="keywords">
+                    None
+                </div>
+
+            </div>
+
+
+            <!-- URLS -->
+
+            <div class="details">
+
+                <h3>
+                    🔗 URLs Found
+                </h3>
+
+                <div id="urls">
+                    None
+                </div>
+
+            </div>
+
+
+            <!-- SUSPICIOUS URLS -->
+
+            <div class="details">
+
+                <h3>
+                    ⚠️ Suspicious URLs
+                </h3>
+
+                <div id="suspiciousUrls">
+                    None
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

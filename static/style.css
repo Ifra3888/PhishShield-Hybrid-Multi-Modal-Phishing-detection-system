@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    background:
+        #f4f7fb;
+
+    color:
+        #1f2937;
+}
+
+
+.container {
+
+    width: 90%;
+
+    max-width: 900px;
+
+    margin:
+        40px auto;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+.logo {
+
+    font-size: 45px;
+}
+
+
+header h1 {
+
+    margin: 0;
+
+    font-size: 32px;
+}
+
+
+header p {
+
+    margin-top: 5px;
+
+    color: #6b7280;
+}
+
+
+/* =====================================
+   CARD
+===================================== */
+
+.card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+.card h2 {
+
+    margin-top: 0;
+}
+
+
+/* =====================================
+   FORM
+===================================== */
+
+label {
+
+    display: block;
+
+    margin-top: 20px;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+
+input,
+textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-family: inherit;
+}
+
+
+textarea {
+
+    resize: vertical;
+}
+
+
+input:focus,
+textarea:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+}
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+button {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+
+    background: #1d4ed8;
+}
+
+
+/* =====================================
+   RESULT
+===================================== */
+
+.result-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+
+.result-box {
+
+    background: #f3f4f6;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+.result-box span {
+
+    display: block;
+
+    color: #6b7280;
+
+    margin-bottom: 8px;
+}
+
+
+.result-box strong {
+
+    font-size: 22px;
+}
+
+
+/* =====================================
+   VERDICT
+===================================== */
+
+.verdict {
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    background: #f3f4f6;
+}
+
+
+/* =====================================
+   DETAILS
+===================================== */
+
+.details {
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    background: #f9fafb;
+
+    border-radius: 10px;
+}
+
+
+.details h3 {
+
+    margin-top: 0;
+}
+
+
+/* =====================================
+   LOADING
+===================================== */
+
+.loading {
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================
+   HIDDEN
+===================================== */
+
+.hidden {
+
+    display: none;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 700px) {
+
+    .result-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    header h1 {
+
+        font-size: 24px;
+    }
+
+}
