@@ -1,0 +1,35 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment/secrets
+.env
+
+# IDE settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+
+#Old large trained model 
+url_model_old.pkl
+
+# ZBar binaries
+zbar-win_x86_64-DShow/
+zbar-win_x86_64-DShow.zip
+libzbar.a
+libzbar.dll.a
+libzbar.la
+
+# Trained machine learning model
+url_model.pkl
